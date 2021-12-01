@@ -143,5 +143,11 @@ hwclock --systohc
 ### Set Locale
 Install theses packages to continue the installation
 ~~~ sh
-sudo pacman -S nano vim sudo
+pacman -S nano vim sudo
 ~~~
+Now we will edit the locale.gen file and uncoment the particular local that we want. 
+- First, edit the locale file using 
+~~~ sh
+nano /etc/locale.gen
+~~~
+- Then uncomment your locale (in our case, `fr_FR.UTF-8 UTF-8` line). Then you can press `ctrl+x` then `Y` and `enter` to save the changes.
