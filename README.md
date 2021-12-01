@@ -15,6 +15,7 @@
   * [Set Password And User](#set-password-and-user)
   * [Install Grub](#install-grub)
   * [Network Manager](#network-manager)
+  * [Final Stage](#final-stage)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -238,3 +239,12 @@ This last step is really important. Otherwise we won't have internet connection 
 pacman -S networkmanager
 systemctl enable NewtorkManager
 ~~~
+
+### Final Stage
+Everything is done now. We just have to quit and reboot using these commands
+~~~ sh
+exit
+umount -l /mnt
+reboot
+~~~
+Done !
