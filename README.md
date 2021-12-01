@@ -12,6 +12,7 @@
   * [Set Time-Zone](#set-time-zone)
   * [Set Locale](#set-locale)
   * [Set Hosts](#set-hosts)
+  * [Set Password And User](#set-password-and-user)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -174,3 +175,25 @@ Then write exacly this. Of course replace `arch` by the name you want to give yo
 ::1              localhost
 127.0.0.1        arch.localdomain       arch
 ~~~
+
+### Set Password And User
+First we will create a password for the root user by typing
+~~~ sh
+passwd
+~~~
+Then type your password 2 times to confirm it.
+
+We can now create a user with this command, in our case `felixoux`
+~~~ sh
+useradd -m felixoux
+~~~
+Add now a password for this user with
+~~~ sh
+passwd felixoux
+~~~
+
+Get all the authorizations for the user using this command 
+~~~ sh
+usermod -aG wheel,audio,video,storage,optical felixoux
+~~~
+
