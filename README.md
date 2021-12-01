@@ -204,5 +204,5 @@ Make `felixoux` a god user by editing visudo by typing
 ~~~ sh
 EDITOR=nano visudo
 ~~~
-Find the line that says `%wheel ALL=(ALL) ALL. Then uncomment it so the user can run any command. Then save the changes with `ctrl+x` `Y` and `enter`
+Find the line that says `%wheel ALL=(ALL) ALL`. Then uncomment it so the user can run any command. Then save the changes with `ctrl+x` `Y` and `enter`
 
