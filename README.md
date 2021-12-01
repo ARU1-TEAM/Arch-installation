@@ -8,6 +8,7 @@
   * [Check Internet Connection](#change-internet-connection)
   * [Set The Time](#set-time)
   * [Creating Partitions](#creating-partitions)
+  * [Base Installation](#base-installation)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
