@@ -75,3 +75,9 @@ Now that you know which disk you are using (in our case, `sda`) we can run this 
 ~~~ sh
 fdisk /dev/sda
 ~~~
+WARNING: pay attention to the following instructions, this will erase everything that's on your disk. Also make shure you selected the right one. If you are not shure at all, you can just type `m` to get the `help` command.
+
+- First type `g` to create a new empty GTP partition table
+- Then type `n` to create a new partition. You can leave everything by default (by pressing `enter`) here except the last sector. You will type `+550M` for the last sector. Then press `enter`
+- Then type `n` again. Leave the two first option by default like the first one. And type `+2G` for the last sector. Then press `enter`
+- Then type `n` again. And for this one, you can leave everything by default (the last sector will automatically take all the remaining space). So just press `enter` 3 times. 
