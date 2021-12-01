@@ -6,6 +6,8 @@
   * [Boot On USB Flash](#boot-on-usb-flash)
   * [Change Keyboard Layout](#change-keyboard-layout)
   * [Check Internet Connection](#change-internet-connection)
+  * [Set The Time](#set-time)
+  * [Creating Partitions](#creating-partitions)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -54,7 +56,7 @@ ping google.com
 If there are mutliple entries going without stopping, that's great !
 You can do `ctrl+c` to stop the command
 
-### Set the time 
+### Set The Time
 You can easaly set the time by running this command 
 ~~~ sh
 timedatectl set-ntp true
@@ -63,3 +65,5 @@ You can check the time to see if it worked using
 ~~~ sh
 timedatectl status
 ~~~
+
+### Creating Partitions 
