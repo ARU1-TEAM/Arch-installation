@@ -111,3 +111,9 @@ Now we have to mount the filesystem partiton with
 ~~~ sh
 mount /dev/sda3 /mnt
 ~~~
+
+### Base Installation
+First we will install pacstrap, the base kernel installation
+~~~ sh
+pacstrap /mnt base linux linux-firmware
+~~~
