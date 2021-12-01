@@ -81,5 +81,6 @@ WARNING: pay attention to the following instructions, this will erase everything
 - Then type `n` to create a new partition. You can leave everything by default (by pressing `enter`) here except the last sector. You will type `+550M` for the last sector. Then press `enter`
 - Then type `n` again. Leave the two first option by default like the first one. And type `+2G` for the last sector. Then press `enter`
 - Then type `n` again. And for this one, you can leave everything by default (the last sector will automatically take all the remaining space). So just press `enter` 3 times. 
+
 Now we will change the partitions format
-- 
+ 
