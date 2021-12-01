@@ -27,4 +27,4 @@
 ## Introduction
 This repository is made to help you in the complete installation of Arch. At the end of this repo you will get a nice xfce4 fully nord customized on your Arch followed by I3wm and all it's customization as well. 
 ## Install Arch (I use Arch btw)
-<p align="center"><img src="/screens/arch_logo.png" alt="ubuntu"></p>
+<p align="center"><img src="arch_logo.png" alt="ubuntu"></p>
