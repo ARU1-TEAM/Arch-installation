@@ -67,3 +67,11 @@ timedatectl status
 ~~~
 
 ### Creating Partitions 
+If you don't know what disk you want to install Arch on, Type this.
+~~~ sh
+fdisk -l
+~~~
+Now that you know which disk you are using (in our case, `sda`) we can run this to select the disk and create the partitions
+~~~ sh
+fdisk /dev/sda
+~~~
