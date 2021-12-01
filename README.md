@@ -14,6 +14,7 @@
   * [Set Hosts](#set-hosts)
   * [Set Password And User](#set-password-and-user)
   * [Install Grub](#install-grub)
+  * [Network Manager](#network-manager)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -231,3 +232,9 @@ sudo os-prober
 sudo update-grub
 ~~~
 
+### Network Manager
+This last step is really important. Otherwise we won't have internet connection after the reboot. So just install this networkmanager and enable it
+~~~ sh
+pacman -S networkmanager
+systemctl enable NewtorkManager
+~~~
