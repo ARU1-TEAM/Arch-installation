@@ -10,6 +10,7 @@
   * [Creating Partitions](#creating-partitions)
   * [Base Installation](#base-installation)
   * [Set Time-Zone](#set-time-zone)
+  * [Set Locale](#set-locale)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -139,3 +140,8 @@ Set the hardware clock using
 hwclock --systohc
 ~~~
 
+### Set Locale
+Install theses packages to continue the installation
+~~~ sh
+sudo pacman -S nano vim sudo
+~~~
