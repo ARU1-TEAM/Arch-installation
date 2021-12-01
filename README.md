@@ -107,3 +107,7 @@ And now let's make the filesystem table by doing
 ~~~ sh
 mkfs.ext4 /dev/sda3
 ~~~
+Now we have to mount the filesystem partiton with
+~~~ sh
+mount /dev/sda3 /mnt
+~~~
