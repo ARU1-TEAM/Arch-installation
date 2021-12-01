@@ -151,3 +151,7 @@ Now we will edit the locale.gen file and uncoment the particular local that we w
 nano /etc/locale.gen
 ~~~
 - Then uncomment your locale (in our case, `fr_FR.UTF-8 UTF-8` line). Then you can press `ctrl+x` then `Y` and `enter` to save the changes.
+- Now use this command to generate the locales 
+~~~ sh
+locale-gen
+~~~
