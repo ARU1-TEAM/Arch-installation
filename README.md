@@ -118,3 +118,7 @@ First we will install pacstrap, the base kernel installation
 ~~~ sh
 pacstrap /mnt base linux linux-firmware
 ~~~
+Now we will install fstab (Don't know what that is for the moment)
+~~~ sh
+genfstab -U /mnt >> /mnt/etc/fstab
+~~~
