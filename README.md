@@ -5,6 +5,7 @@
   * [Create USB Flash](#create-usb-flash)
   * [Boot On USB Flash](#boot-on-usb-flash)
   * [Change Keyboard Layout](#change-keyboard-layout)
+  * [Check Internet Connection](#change-internet-connection)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -33,14 +34,17 @@ This repository is made to help you in the complete installation of Arch. At the
 - Download [Arch iso file](https://archlinux.cu.be/iso/2021.12.01/) and select the `archlinux-2021.12.01-x86_64.iso`.
 - Download [balenaEtcher](https://www.balena.io/etcher/).
 - Load balena etcher, put iso file and select your usb key.
+- 
 ### Boot On USB Flash
  - Reboot your computer and press `DEL` key to get into your BIOS/UEFI.
  - Select your usb-key in the boot menu.
  - Save and exit.
+ - 
 ### Change Keyboard Layout
 The first thing to do is to change the keyboard layoutsi it won't bother us for the rest of the installation. To change it in french use this command
 ~~~ sh
 loadkeys fr-latin1
+
 ~~~
 ### Check Internet Connection
 We will also check if we are connected so we can install all the needed packages later. To do so, type this command
@@ -49,3 +53,13 @@ ping google.com
 ~~~
 If there are mutliple entries going without stopping, that's great !
 You can do `ctrl+c` to stop the command
+
+### Set the time 
+You can easaly set the time by running this command 
+~~~ sh
+timedatectl set-ntp true
+~~~
+You can check the time to see if it worked using 
+~~~ sh
+timedatectl status
+~~~
