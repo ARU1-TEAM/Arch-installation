@@ -9,6 +9,7 @@
   * [Set The Time](#set-time)
   * [Creating Partitions](#creating-partitions)
   * [Base Installation](#base-installation)
+  * [Set Time-Zone](#set-time-zone)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -127,3 +128,9 @@ And now we can go in the root file to continue the rest of the installation usin
 arch-chroot /mnt
 ~~~
 The prompt has normally changed now. 
+
+### Set Time-Zone
+We will now set our time zone using this command. We will select brussels for this example but change it of course
+~~~ sh 
+ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
+~~~
