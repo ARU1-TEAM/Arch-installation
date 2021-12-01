@@ -4,8 +4,6 @@
 * [Install Arch](#install-arch)
   * [Create USB Flash](#create-usb-flash)
   * [Boot On USB Flash](#boot-on-usb-flash)
-  * [Follow Instructions](#follow-instructions)
-  * [Install Grub](#install-grub)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
