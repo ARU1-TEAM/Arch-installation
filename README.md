@@ -4,6 +4,7 @@
 * [Install Arch](#install-arch)
   * [Create USB Flash](#create-usb-flash)
   * [Boot On USB Flash](#boot-on-usb-flash)
+  * [Change Keyboard Layout](#change-keyboard-layout)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -36,3 +37,15 @@ This repository is made to help you in the complete installation of Arch. At the
  - Reboot your computer and press `DEL` key to get into your BIOS/UEFI.
  - Select your usb-key in the boot menu.
  - Save and exit.
+### Change Keyboard Layout
+The first thing to do is to change the keyboard layoutsi it won't bother us for the rest of the installation. To change it in french use this command
+~~~ sh
+loadkeys fr-latin1
+~~~
+### Check Internet Connection
+We will also check if we are connected so we can install all the needed packages later. To do so, type this command
+~~~ sh 
+ping google.com
+~~~
+If there are mutliple entries going without stopping, that's great !
+You can do `ctrl+c` to stop the command
