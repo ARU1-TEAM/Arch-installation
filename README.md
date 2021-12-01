@@ -11,6 +11,7 @@
   * [Base Installation](#base-installation)
   * [Set Time-Zone](#set-time-zone)
   * [Set Locale](#set-locale)
+  * [Set Hosts](#set-hosts)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -154,4 +155,22 @@ nano /etc/locale.gen
 - Now use this command to generate the locales 
 ~~~ sh
 locale-gen
+~~~
+
+### Set Hosts
+Enter the hostname file to give a nama to your computer.
+~~~ sh
+nano /etc/hostname
+~~~
+Then put the name you want to give to your computer, in our case `arch`. Then press `ctrl+x` then `Y` then `enter` to save the changes.
+
+After that we will put the hosts in the hosts file using 
+~~~ sh
+nano /etc/hosts
+~~~
+Then write exacly this. Of course replace `arch` by the name you want to give your computer.
+~~~
+127.0.0.1        localhost
+::1              localhost
+127.0.0.1        arch.localdomain       arch
 ~~~
