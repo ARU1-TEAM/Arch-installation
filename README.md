@@ -134,3 +134,8 @@ We will now set our time zone using this command. We will select brussels for th
 ~~~ sh 
 ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
 ~~~
+Set the hardware clock using 
+~~~ sh
+hwclock --systohc
+~~~
+
