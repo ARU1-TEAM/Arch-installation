@@ -122,3 +122,8 @@ Now we will install fstab (Don't know what that is for the moment)
 ~~~ sh
 genfstab -U /mnt >> /mnt/etc/fstab
 ~~~
+And now we can go in the root file to continue the rest of the installation using 
+~~~ sh
+arch-chroot /mnt
+~~~
+The prompt has normally changed now. 
