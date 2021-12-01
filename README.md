@@ -103,4 +103,7 @@ Followed by
 ~~~ sh
 swapon /dev/sda2
 ~~~
-
+And now let's make the filesystem table by doing 
+~~~ sh
+mkfs.ext4 /dev/sda3
+~~~
