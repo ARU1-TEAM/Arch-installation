@@ -89,4 +89,18 @@ Now we will change the partitions format
 - First type `t` and select the partition 1 by typing `1` to change it's format. And then type `1` again to change the first partition format into EFI
 - Type `t` again and this time type `2` to select the second partition. Then type `19` to put the second partition format in linux_swap
 
-And finally we will type `w` to write all the changes and exit fdisk
+And finally we will type `w` to write all the changes and exit fdisk.
+
+The EFI partition needs to be FAT32 so enter this command 
+~~~ sh
+mkfs.fat -F32 /dev/sda1
+~~~
+Let's configure the swap now by doing 
+~~~ sh
+mkswap /dev/sda2
+~~~
+Followed by
+~~~ sh
+swapon /dev/sda2
+~~~
+
