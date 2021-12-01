@@ -13,6 +13,7 @@
   * [Set Locale](#set-locale)
   * [Set Hosts](#set-hosts)
   * [Set Password And User](#set-password-and-user)
+  * [Install Grub](#install-grub)
 * [Install Packages](#install-packages)
   * [Primary Packages](#primary-packages)
   * [Side Applications](#side-applications)
@@ -205,4 +206,28 @@ Make `felixoux` a god user by editing visudo by typing
 EDITOR=nano visudo
 ~~~
 Find the line that says `%wheel ALL=(ALL) ALL`. Then uncomment it so the user can run any command. Then save the changes with `ctrl+x` `Y` and `enter`
+
+### Install Grub
+First install grub and all it's needed packages using.
+~~~ sh
+pacman -S grub efibootmgr dosfstools os-prober mtools
+~~~
+Make directory and mount it for grub with theses commands
+~~~ sh
+mkdir /boot/EFI
+mount /dev/sda1 /boot/EFI
+~~~
+Configure and install grub like this.
+~~~ sh
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+~~~
+Then create a grub config file using 
+~~~ sh
+grub-mkconfig -o /boot/grub/grub.cfg
+~~~
+Of course if you already have grub installed, you will just have to update it like this.
+~~~ sh
+sudo os-prober
+sudo update-grub
+~~~
 
