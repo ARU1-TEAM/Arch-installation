@@ -87,7 +87,6 @@ Now that you know which disk you are using (in our case, `sda`) we can run this 
 ~~~ sh
 fdisk /dev/sda
 ~~~
-Colons can be used to align columns.
 
 | Partition     |     Space     |      Type     |
 | ------------- |:-------------:| -------------:|
