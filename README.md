@@ -204,10 +204,7 @@ Get all the authorizations for the user using this command
 ~~~ sh
 usermod -aG wheel,audio,video,storage,optical felixoux
 ~~~
-Now install sudo using 
-~~~ sh
-pacman -S sudo
-~~~
+
 Make `felixoux` a god user by editing visudo by typing
 ~~~ sh
 EDITOR=nano visudo
