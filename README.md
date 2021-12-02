@@ -44,12 +44,10 @@ This repository is made to help you in the complete installation of Arch. At the
 - Download [Arch iso file](https://archlinux.cu.be/iso/2021.12.01/) and select the `archlinux-2021.12.01-x86_64.iso`.
 - Download [balenaEtcher](https://www.balena.io/etcher/).
 - Load balena etcher, put iso file and select your usb key.
-- 
 ### Boot On USB Flash
  - Reboot your computer and press `DEL` key to get into your BIOS/UEFI.
  - Select your usb-key in the boot menu.
  - Save and exit.
- - 
 ### Change Keyboard Layout
 The first thing to do is to change the keyboard layoutsi it won't bother us for the rest of the installation. To change it in french use this command
 ~~~ sh
