@@ -6,7 +6,7 @@
   * [Boot On USB Flash](#boot-on-usb-flash)
   * [Change Keyboard Layout](#change-keyboard-layout)
   * [Check Internet Connection](#change-internet-connection)
-  * [Set The Time](#set-time)
+  * [Set The Time](#set-the-time)
   * [Creating Partitions](#creating-partitions)
   * [Base Installation](#base-installation)
   * [Set Time-Zone](#set-time-zone)
