@@ -237,7 +237,7 @@ sudo update-grub
 This last step is really important. Otherwise we won't have internet connection after the reboot. So just install this networkmanager and enable it
 ~~~ sh
 pacman -S networkmanager
-systemctl enable NewtorkManager
+systemctl enable NetworkManager
 ~~~
 
 ### Final Stage
