@@ -52,7 +52,10 @@ This repository is made to help you in the complete installation of Arch. At the
 The first thing to do is to change the keyboard layoutsi it won't bother us for the rest of the installation. To change it in french use this command
 ~~~ sh
 loadkeys fr-latin1
-
+~~~
+Or this for the belgian keyboard layout
+~~~ sh
+loadkeys be-latin1
 ~~~
 ### Check Internet Connection
 We will also check if we are connected so we can install all the needed packages later. To do so, type this command
