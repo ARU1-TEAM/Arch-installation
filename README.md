@@ -89,7 +89,7 @@ fdisk /dev/sda
 ~~~
 
 | Partition     |     Space     |Type           |
-| ------------- |:-------------:| -------------:|
+| ------------- |:-------------:|:-------------:|
 | /dev/sdX1     |     +550M     |   EFI System  |
 | /dev/sdX2     |      +2G      |   Linux Swap  |
 | /dev/sdX3     |        *      |  File System  |
