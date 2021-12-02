@@ -88,7 +88,7 @@ Now that you know which disk you are using (in our case, `sda`) we can run this 
 fdisk /dev/sda
 ~~~
 
-| Partition     |     Space     |      Type     |
+| Partition     |     Space     |     Type      |
 | ------------- |:-------------:| -------------:|
 | /dev/sdX1     |     +550M     |   EFI System  |
 | /dev/sdX2     |      +2G      |   Linux Swap  |
