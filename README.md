@@ -97,19 +97,12 @@ fdisk /dev/sda
  
 Now we can create the partitions.
 
-|  First type `g` to create a new empty GTP partition table |
-|  Then type `n` to create a new partition. You can leave everything by default (by pressing `enter`) here except the last sector. You will type `+550M` for the last sector. Then press `enter` |
-| /dev/sdX3     |        *      |  File System  |
-- First type `g` to create a new empty GTP partition table
-- Then type `n` to create a new partition. You can leave everything by default (by pressing `enter`) here except the last sector. You will type `+550M` for the last sector. Then press `enter`
-- Then type `n` again. Leave the two first option by default like the first one. And type `+2G` for the last sector. Then press `enter`
-- Then type `n` again. And for this one, you can leave everything by default (the last sector will automatically take all the remaining space). So just press `enter` 3 times. 
-
-Now we will change the partitions format
-- First type `t` and select the partition 1 by typing `1` to change it's format. And then type `1` again to change the first partition format into EFI
-- Type `t` again and this time type `2` to select the second partition. Then type `19` to put the second partition format in linux_swap
-
-And finally we will type `w` to write all the changes and exit fdisk.
+|    Command    |                 Function               |   
+| ------------- |:--------------------------------------:| 
+|    Type `g`   |  Create new empty GPT partition table  | 
+|    Type `n`   |         Create new partition           | 
+|    Type `t`   |        Change partition format         | 
+|    Type `w`   |         Write all the changes          |
 
 The EFI partition needs to be FAT32 so enter this command 
 ~~~ sh
